@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Purple Adult Style Pack List</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #1a0b1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+  .card {
+    background: radial-gradient(circle at 30% 30%, #3d1a4a, #120315);
+    width: 900px;
+    padding: 40px 30px 30px 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 80px rgba(180, 0, 255, 0.4), inset 0 0 60px rgba(200, 50, 255, 0.1);
+    border: 1px solid #9b4dca;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .column {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .column h3 {
+    color: #e8c8ff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #b06ad0;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px #b06ad0;
+  }
+  .item {
+    color: #f5e6ff;
+    font-size: 16px;
+    line-height: 1.5;
+    background: rgba(80, 20, 100, 0.3);
+    padding: 10px 14px;
+    border-radius: 12px;
+    border-left: 3px solid #d48cff;
+    backdrop-filter: blur(2px);
+    transition: 0.2s;
+    box-shadow: 0 0 15px rgba(200, 100, 255, 0.1);
+  }
+  .item:hover {
+    background: rgba(120, 40, 150, 0.5);
+    box-shadow: 0 0 25px #b259e0;
+  }
+  .item small {
+    color: #c99be0;
+    font-weight: 300;
+  }
+  .divider {
+    width: 2px;
+    background: linear-gradient(to bottom, #ff66ff, #7700aa, #ff66ff);
+    box-shadow: 0 0 30px #ff44ff, 0 0 60px #aa00ff;
+    border-radius: 2px;
+    margin: 0 10px;
+  }
+  .left .item { border-left-color: #ff88ff; }
+  .right .item { border-left-color: #ff66aa; }
+
+  /* Кнопка */
+  .btn {
+    display: inline-block;
+    padding: 16px 40px;
+    background: linear-gradient(135deg, #a64dff, #6600cc);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px solid #d48cff;
+    box-shadow: 0 0 30px rgba(160, 0, 255, 0.5);
+    transition: all 0.3s ease;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+  .btn:hover {
+    background: linear-gradient(135deg, #c07aff, #7a00e6);
+    box-shadow: 0 0 60px #b259e0, 0 0 100px #8800ff;
+    transform: scale(1.05);
+    border-color: #ff88ff;
+  }
+  .btn:active {
+    transform: scale(0.95);
+  }
+  .btn .line {
+    display: block;
+  }
+  .btn .line + .line {
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <!-- Две колонки -->
+  <div class="columns">
+    <!-- Левая колонка (английский) -->
+    <div class="column left">
+      <h3>🇬🇧 English</h3>
+      <div class="item"><b>Testing Pack</b> – test pack <small>(without tin)</small></div>
+      <div class="item"><b>One Pack</b> – mini pack <small>(ages 16 to 18)</small></div>
+      <div class="item"><b>Two Pack</b> – medium pack <small>(ages 10 to 18)</small></div>
+      <div class="item"><b>Three Pack</b> – large pack <small>(ages 6 to 18)</small></div>
+      <div class="item"><b>Four Pack</b> – all packs <small>(ages 0 to 18)</small></div>
+    </div>
+
+    <!-- Разделитель -->
+    <div class="divider"></div>
+
+    <!-- Правая колонка (русский) -->
+    <div class="column right">
+      <h3>🇷🇺 Русский</h3>
+      <div class="item"><b>Testing Pack</b> – тестовый пак <small>(без жести)</small></div>
+      <div class="item"><b>One Pack</b> – мини пак <small>(от 16 до 18 лет)</small></div>
+      <div class="item"><b>Two Pack</b> – средний пак <small>(от 10 до 18 лет)</small></div>
+      <div class="item"><b>Three Pack</b> – большой пак <small>(от 6 до 18 лет)</small></div>
+      <div class="item"><b>Four Pack</b> – все паки <small>(от 0 до 18 лет)</small></div>
+    </div>
+  </div>
+
+  <!-- Кнопка по центру внизу -->
+  <a href="https://link.me/cookiepie" class="btn" target="_blank">
+    <span class="line">🔞Купить Паки🔞</span>
+    <span class="line">🔞Buy Pack🔞</span>
+  </a>
+</div>
+</body>
+</html>
